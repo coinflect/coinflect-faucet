@@ -1,0 +1,48 @@
+{
+    "GLOBAL_RL": {
+        "ID": "GLOBAL",
+        "RATELIMIT": {
+            "REVERSE_PROXIES": 2,
+            "MAX_LIMIT": 40,
+            "WINDOW_SIZE": 1,
+            "PATH": "/",
+            "SKIP_FAILED_REQUESTS": false
+        }
+    },
+    "evmchains": [
+        {
+            "ID": "CE",
+            "NAME": "Addismya (CE-Chain)",
+            "TOKEN": "CFLT",
+            "RPC": "https://api-testnet.coinflect.com/ext/CE/rpc",
+            "CHAINID": 36,
+            "EXPLORER": "https://explorer-testnet.coinflect.com",
+            "IMAGE": "https://uploads-ssl.webflow.com/6298958155799452d044c57e/6298bfede4d4adbc3cfc925e_fav_256.svg",
+            "MAX_PRIORITY_FEE": "2000000000",
+            "MAX_FEE": "100000000000",
+            "DRIP_AMOUNT": 2,
+            "DECIMALS": 18,
+            "RECALIBRATE": 30,
+            "RATELIMIT": {
+                "MAX_LIMIT": 1,
+                "WINDOW_SIZE": 1440
+            }
+        }
+    ],
+    "erc20tokens": [
+        {
+            "ID": "CFLT",
+            "HOSTID": "CC",
+            "NAME": "Wrapped CFLT",
+            "TOKEN": "WCFLT",
+            "CONTRACTADDRESS": "0x",
+            "DRIP_AMOUNT": 2,
+            "GASLIMIT": "150000",
+            "DECIMALS": 18,
+            "RATELIMIT": {
+                "MAX_LIMIT": 1,
+                "WINDOW_SIZE": 1440
+            }
+        }
+    ]
+}
