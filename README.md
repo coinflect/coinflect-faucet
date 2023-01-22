@@ -1,1 +1,1 @@
-# Coinflect Faucet
+# Coinflect faucet
